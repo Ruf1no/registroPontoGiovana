@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #434c4e;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+input[type="text"],
+input[type="time"],
+input[type="date"],
+input[type="file"],
+button {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #b5b5b5;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #0489B1;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0B4C5F;
+}
+
+ul#listaFuncionarios {
+    margin: 20px 0; /* Margem superior e inferior */
+    padding: 0; /* Removendo qualquer preenchimento padrão */
+    list-style-type: none; /* Removendo os marcadores de lista padrão */
+    display: flex;
+    flex-wrap: wrap; /* Para que os funcionários possam quebrar a linha conforme necessário */
+    justify-content: space-around; /* Para espaçamento uniforme entre os funcionários */
+}
+
+/* Estilo para cada item da lista de funcionários */
+ul#listaFuncionarios li {
+    width: calc(33.33% - 20px); /* Definindo a largura de cada funcionário para 33.33% com margem */
+    margin: 10px; /* Espaçamento entre os funcionários */
+    background-color: #f2f2f2; /* Cor de fundo cinza */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 8px; /* Borda arredondada */
+    text-align: center; /* Centralizar conteúdo */
+}
