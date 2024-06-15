@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de ponto</title>
+    <link rel="stylesheet" href="css/registro.css">
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="banner.html">Home</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="registro.html">Registro de ponto</a></li>
+            <li><a href="mapa.html">Mapa</a></li>
+            <li><a href="administracao.html">Administração</a></li>
+        </ul>
+
+        <img src="img/banner4.png" alt="Banner">
+
+         <!--Registro de ponto-->
+    <h1>Registro de ponto</h1>
+    <form>
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora"><br>
+
+        <label for="data">Data:</label>
+        <input type="date" id="data" name="data"><br>
+ 
+        <label for="localizacao">Localização:</label>
+        <input type="text" id="localizacao" name="localizacao"><br>
+       
+        <label for="imagemPonto">Imagem:</label>
+        <input type="file" id="imagemPonto" name="imagemPonto"><br>
+
+        <button type="button" onclick="enviarDadosParaFirebasePonto()">Enviar Registro</button>
+    </form>
+    
+
+    <h1>Consultar Registro</h1>
+    <form>
+        <label for="dataConsulta">Data:</label>
+        <input type="date" id="dataConsulta" name="dataConsulta"><br>
+        <button type="button" onclick="consultarPontoPorData()">Consultar</button>
+        <button type="button" onclick="limparConsultaRegistro()">Limpar</button>
+    </form>
+    <ul id="listaPontos"></ul>
+
+    <!-- Inclua o Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

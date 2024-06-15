@@ -36,13 +36,17 @@ h1 {
     color: #333; /* Cor do texto */
 }
 
+
+h1 {
+    text-align: center;
+}
+
 form {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin-top: 100px;
 }
 
 label {
@@ -72,7 +76,7 @@ button:hover {
     background-color: #0B4C5F;
 }
 
-ul#listaFuncionarios {
+ul#listaPontos {
     margin: 20px 0; /* Margem superior e inferior */
     padding: 0; /* Removendo qualquer preenchimento padrão */
     list-style-type: none; /* Removendo os marcadores de lista padrão */
@@ -82,7 +86,7 @@ ul#listaFuncionarios {
 }
 
 /* Estilo para cada item da lista de funcionários */
-ul#listaFuncionarios li {
+ul#listaPontos li {
     width: calc(33.33% - 20px); /* Definindo a largura de cada funcionário para 33.33% com margem */
     margin: 10px; /* Espaçamento entre os funcionários */
     background-color: #f2f2f2; /* Cor de fundo cinza */
@@ -92,13 +96,3 @@ ul#listaFuncionarios li {
 }
 
 
-
-/* Estilos para o banner */
-.banner {
-    width: 20px; /* Garante que o banner ocupe toda a largura do contêiner pai */
-    max-width: 30px; /* Garante que o banner não ultrapasse a largura máxima */
-    height: 10px; /* Garante que a altura seja ajustada automaticamente para manter a proporção */
-    display: block; /* Define o banner como um elemento de bloco para ocupar toda a largura disponível */
-    margin-right: 100px;
-    margin-top: 10px; /* Espaçamento superior para separá-lo do menu */
-}

@@ -9,24 +9,46 @@
 <body>
     <nav>
         <ul class="menu">
-            <li><a href="cadastro.html">Home</a></li>
+            <li><a href="banner.html">Home</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="registro.html">Registro de ponto</a></li>
             <li><a href="mapa.html">Mapa</a></li>
+            <li><a href="administracao.html">Administração</a></li>
             <!-- Adicione outros links de menu conforme necessário -->
         </ul>
+        <div class="banner">
+            <img src="img/banner3.png" alt="Banner">
+        </div>
     </nav>
-    <h1>Cadastro de Funcionarios</h1>
+
+    
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
     <form>
+        <h1>Cadastro de Funcionarios</h1>
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome"><br>
 
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone" name="telefone"><br>
+
         <label for="area">Aréa que trabalha:</label>
         <input type="text" id="area" name="area"><br>
-
-        <label for="hora">Hora:</label>
-        <input type="time" id="hora" name="hora"><br>
-
-        <label for="data">Data:</label>
-        <input type="date" id="data" name="data"><br>
 
         <label for="endereco">Endereço:</label>
         <input type="text" id="endereco" name="endereco"><br>
@@ -35,17 +57,10 @@
         <label for="imagem">Imagem:</label>
         <input type="file" id="imagem" name="imagem"><br>
 
-        <button type="button" onclick="enviarDadosParaFirebase()">Enviar Dados</button>
+        <button type="button" onclick="enviarDadosParaFirebaseFuncionario()">Enviar Dados</button>
     </form>
     
-    <h1>Consultar Funcionario</h1>
-    <form>
-        <label for="nomeConsulta">Nome:</label>
-        <input type="text" id="nomeConsulta" name="nomeConsulta"><br>
-        <button type="button" onclick="consultarPontoPorNome()">Consultar</button>
-        <button type="button" onclick="limparConsulta()">Limpar</button>
-    </form>
-    <ul id="listaFuncionarios"></ul>
+
 
     <!-- Inclua o Firebase -->
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>

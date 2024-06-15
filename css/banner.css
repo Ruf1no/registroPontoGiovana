@@ -36,20 +36,3 @@ h1 {
     color: #333; /* Cor do texto */
 }
 
-
-h2 {
-    text-align: center;
-}
-
-input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-#map {
-    width: 100%;
-    height: 400px;
-}
