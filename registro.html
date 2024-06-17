@@ -13,12 +13,14 @@
             <li><a href="cadastro.html">Cadastro</a></li>
             <li><a href="registro.html">Registro de ponto</a></li>
             <li><a href="mapa.html">Mapa</a></li>
-            <li><a href="administracao.html">Administração</a></li>
+            <li><a href="index.html">Login</a></li>
         </ul>
-
+    </nav>
         <img src="img/banner4.png" alt="Banner">
 
-         <!--Registro de ponto-->
+        
+
+      <!--Registro de ponto-->
     <h1>Registro de ponto</h1>
     <form>
         <label for="hora">Hora:</label>
@@ -35,17 +37,20 @@
 
         <button type="button" onclick="enviarDadosParaFirebasePonto()">Enviar Registro</button>
     </form>
-    
 
-    <h1>Consultar Registro</h1>
+
+
+
+    <!-- Formulário de consulta de registros de ponto -->
+    <h1>Consultar Registros de Ponto Anteriores</h1>
     <form>
-        <label for="dataConsulta">Data:</label>
+        <label for="dataConsulta">Data de Consulta:</label>
         <input type="date" id="dataConsulta" name="dataConsulta"><br>
-        <button type="button" onclick="consultarPontoPorData()">Consultar</button>
-        <button type="button" onclick="limparConsultaRegistro()">Limpar</button>
+        <button type="button" onclick="consultarPontoAnterior()">Consultar</button>
+        <button type="button" onclick="limparConsultaPonto()">Limpar</button>
     </form>
     <ul id="listaPontos"></ul>
-
+    
     <!-- Inclua o Firebase -->
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>

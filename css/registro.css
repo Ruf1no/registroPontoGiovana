@@ -29,6 +29,11 @@ body {
     background-color: #555; /* Cor de fundo ao passar o mouse sobre os links */
 }
 
+.menu li:last-child {
+    margin-right: 0; /* Remove o espaçamento do último item */
+    margin-left: 990px; /* Move o último item para o canto direito */
+
+}
 /* Estilos para o título "Painel de Administração" */
 h1 {
     text-align: center; /* Centraliza o título */

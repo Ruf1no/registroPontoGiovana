@@ -9,48 +9,37 @@
 <body>
     <nav>
         <ul class="menu">
-            <li><a href="banner.html">Home</a></li>
-            <li><a href="cadastro.html">Cadastro</a></li>
-            <li><a href="registro.html">Registro de ponto</a></li>
-            <li><a href="mapa.html">Mapa</a></li>
             <li><a href="administracao.html">Administração</a></li>
+            <li><a href="index.html">Login</a></li>
         </ul>
+    </nav>
+
+      
 
 
-        <h1>Painel de Administração</h1>
+    <h1>Consultar Funcionario</h1>
+    <form>
+        <label for="nomeConsulta">Nome:</label>
+        <input type="text" id="nomeConsulta" name="nomeConsulta"><br>
+        <button type="button" onclick="consultarPontoPorNome()">Consultar</button>
+        <button type="button" onclick="mostrarTodosFuncionarios()">Mostrar Todos os Funcionários</button>
+        <button type="button" onclick="limparConsultaUsuario()">Limpar</button>
+    </form>
+    <ul id="listaFuncionarios"></ul>
 
-    <!-- Tabela de Registros de Ponto -->
-    
-     <!-- Tabela de Funcionários -->
-     <h2>Lista de Funcionários</h2>
-     <table>
-         <thead>
-             <tr>
-                 <th>Nome</th>
-                 <th>Área</th>
-                 <th>Endereço</th>
-                 <th>Telefone</th>
-                 <th>Imagem</th>
-             </tr>
-         </thead>
-         <tbody id="listaUsuarios"></tbody>
-     </table>
- 
-     <!-- Tabela de Registros de Ponto -->
-     
-     <table>
-         <thead>
-            <h2>Lista de Registros de Ponto</h2>
-             <tr>
-                 <th>Hora</th>
-                 <th>Data</th>
-                 <th>Localização</th>
-                 <th>Imagem</th>
-             </tr>
-         </thead>
-         <tbody id="listaRegistros"></tbody>
-     </table>
- 
+
+
+    <h1>Consultar Registro</h1>
+    <form>
+        <label for="dataConsulta">Data:</label>
+        <input type="date" id="dataConsulta" name="dataConsulta"><br>
+        <button type="button" onclick="consultarPontoPorData()">Consultar</button>
+        <button type="button" onclick="mostrarTodosRegistros()">Mostrar Todos os Registros de Ponto</button>
+        <button type="button" onclick="limparConsultaRegistro()">Limpar</button>
+    </form>
+    <ul id="listaPontos"></ul>
+
+
 
     <!-- Inclua o Firebase e o script -->
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
